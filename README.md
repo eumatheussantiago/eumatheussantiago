@@ -148,17 +148,6 @@ Passionate about technology and driven by the challenge of transforming ideas in
 ![Insomnia](https://img.shields.io/badge/Insomnia-5849BE?style=for-the-badge&logo=insomnia)
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma)
 
----
-
-## 📊 GitHub Stats
-
-<p align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=eumatheussantiago&show_icons=true&theme=tokyonight&count_private=true&include_all_commits=true" alt="GitHub Stats" />
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=eumatheussantiago&layout=compact&theme=tokyonight" alt="Top Languages" />
-</p>
-
----
-
 ## 🚀 Philosophy
 
 > _"Code is not just about solving problems.  

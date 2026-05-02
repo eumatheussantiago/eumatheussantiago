@@ -1,24 +1,21 @@
-# Hi 👋, Im Matheus Santiago
+# Hi 👋, I'm Matheus Santiago
 
-🚀 full stack developer 
-Python & Java(Spring Boot)
-
+🚀 Full Stack Developer 
+Python & Java (Spring Boot)
 
 Passionate about technology and driven by the challenge of transforming ideas into real solutions through Software Engineering and Artificial Intelligence.
-
 
 ## 🌐 Where to find me
 
 <p align="left">
-  <a href="https://github.com/eumatheussantiago">
-    <img src="https://img.shields.io/badge/GitHub-eumatheussantiago-181717?style=for-the-badge&logo=github" />
+  <a href="https://github.com/eumatheussantiago" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-eumatheussantiago-181717?style=for-the-badge&logo=github" alt="GitHub" />
   </a>
-  <a href="https://instagram.com/eu.matheussantiago">
-    <img src="https://img.shields.io/badge/Instagram-@eu.matheussantiago-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />
+  <a href="https://instagram.com/eu.matheussantiago" target="_blank">
+    <img src="https://img.shields.io/badge/Instagram-@eu.matheussantiago-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
   </a>
-  </a>
-  <a href="https://www.youtube.com/@eumatheussantiago">
-    <img src="https://img.shields.io/badge/YouTube-eu%20matheus%20santiago-FF0000?style=for-the-badge&logo=youtube&logoColor=white" />
+  <a href="https://www.youtube.com/@eumatheussantiago" target="_blank">
+    <img src="https://img.shields.io/badge/YouTube-eu%20matheus%20santiago-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube" />
   </a>
 </p>
 
@@ -26,13 +23,13 @@ Passionate about technology and driven by the challenge of transforming ideas in
 
 ## 🧠 What I do
 
--   🏗️ SaaS & High-scale systems
--   ⚡ Performance optimization
--   🧩 Clean architecture & system design
--   🔐 Secure APIs & authentication
--   💳 Payments, subscriptions & business logic
--   🤖 Automation & integrations
--   📊 Dashboards & analytics
+- 🏗️ SaaS & High-scale systems
+- ⚡ Performance optimization
+- 🧩 Clean architecture & system design
+- 🔐 Secure APIs & authentication
+- 💳 Payments, subscriptions & business logic
+- 🤖 Automation & integrations
+- 📊 Dashboards & analytics
 
 ---
 
@@ -69,9 +66,9 @@ Passionate about technology and driven by the challenge of transforming ideas in
 
 ## 📊 GitHub Stats
 
-<p align="left">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=eumatheussantiago&show_icons=true&theme=tokyonight&count_private=true" />
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=eumatheussantiago&layout=compact&theme=tokyonight" />
+<p align="center">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=eumatheussantiago&show_icons=true&theme=tokyonight&count_private=true&include_all_commits=true" alt="GitHub Stats" />
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=eumatheussantiago&layout=compact&theme=tokyonight" alt="Top Languages" />
 </p>
 
 ---

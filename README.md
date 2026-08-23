@@ -79,11 +79,14 @@ Passionate about technology and driven by the challenge of transforming ideas in
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img height="180" src="https://github-readme-stats.vercel.app/api?username=eumatheussantiago&show_icons=true&theme=tokyonight&count_private=true&include_all_commits=true&bg_color=1a1b27" alt="GitHub Stats" />
-  <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=eumatheussantiago&layout=compact&theme=tokyonight&bg_color=1a1b27" alt="Top Languages" />
+  <a href="https://github.com/eumatheussantiago">
+    <img height="180" src="https://github-readme-stats.vercel.app/api?username=eumatheussantiago&show_icons=true&theme=tokyonight&include_all_commits=true&v=1" alt="GitHub Stats" />
+  </a>
+  <a href="https://github.com/eumatheussantiago">
+    <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=eumatheussantiago&layout=compact&theme=tokyonight&v=1" alt="Top Languages" />
+  </a>
 </p>
 
----
 
 ## 🚀 Philosophy
 

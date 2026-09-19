@@ -1,0 +1,73 @@
+name: Update profile widgets
+
+on:
+  schedule:
+    - cron: "17 6 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/profile-widgets.yml
+      - .github/scripts/update_activity.py
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-widgets
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out profile
+        uses: actions/checkout@v7
+
+      - name: Update activity graph
+        env:
+          PROFILE_OWNER: ${{ github.repository_owner }}
+        run: python3 .github/scripts/update_activity.py --username "$PROFILE_OWNER" --output assets --prefer-service --bootstrap-snake
+
+      - name: Generate contribution animation
+        id: snake
+        uses: Platane/snk/svg-only@v3
+        continue-on-error: true
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-snake.svg?color_snake=#7C3AED&color_dots=#EDE9FE,#DDD6FE,#C4B5FD,#8B5CF6,#6D28D9
+            dist/github-snake-dark.svg?palette=github-dark&color_snake=#C4B5FD&color_dots=#161B22,#312E81,#4F46E5,#7C3AED,#A78BFA
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Install validated snake animation
+        if: steps.snake.outcome == 'success'
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import xml.etree.ElementTree as ET
+          for name in ('github-snake.svg', 'github-snake-dark.svg'):
+              try:
+                  content = (Path('dist') / name).read_bytes()
+                  root = ET.fromstring(content)
+                  if root.tag != '{http://www.w3.org/2000/svg}svg':
+                      raise ValueError('Expected SVG')
+                  (Path('assets') / name).write_bytes(content)
+              except (OSError, ValueError, ET.ParseError):
+                  print('Keeping calendar-based animation for', name)
+          PY
+
+      - name: Commit generated SVGs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/activity.svg assets/github-snake.svg assets/github-snake-dark.svg
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git commit -m "Update profile activity and snake"
+          git pull --rebase origin main
+          git push origin HEAD:main
